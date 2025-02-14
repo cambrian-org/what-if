@@ -1,0 +1,58 @@
+<section>
+    <h2>What if the goals for vision were different?</h2>
+    <hr style="border-top: 1px solid #333; width: 100%; margin: 20px 0;">
+
+    <p>
+        We initialize a population of agents for two visual tasks (DETECTION and
+        NAVIGATION) with a single eye with one photoreceptor. We then evolve
+        this
+        population of agents subject
+        to morphological mutations: add photoreceptor, add eye, and adjust
+        placement. In the NAVIGATION task, we first observe an emergence of
+        dispersed vision, where many eyes are employed. By
+        50 generations, a compound-type eye emerges; that is, a vision system
+        consisting of 10 individual eyes, each with 16 photoreceptors (4 x 1
+        resolution), distributed over the entire diameter of
+        the agent. In the DETECTION task, we initially observe the emergence
+        low-resolution vision.
+        After 50 generations, the population has converged on a morphology
+        consisting of two forward
+        facing, high-resolution camera-type eyes each with 225 photoreceptors
+        (15×15 resolution). </p>
+
+    <div class="evolution-row">
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="videos/Evolution-of-Compound-Type-Eyes.mp4"
+                    type="video/mp4">
+            </video>
+            <div class="caption detection">Orientation/Navigation Task: <br>
+                Agents Evolves Compound-Type Eyes</div>
+        </div>
+
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="videos/Evolution-of-Camera-Type-Eyes.mp4"
+                    type="video/mp4">
+            </video>
+            <div class="caption detection">Object Discrimination Task: <br>
+                Agents Evolves Camera-Type Eyes</div>
+        </div>
+    </div>
+
+    <p>
+        This evolutionary divergence reflects task-specific optimization: NAVIGATION
+        agents maximize spatial
+        awareness through distributed low-resolution sensing, while DETECTION
+        agents sacrifice peripheral
+        vision for enhanced frontal acuity, enabling object discrimination at
+        greater distances within their
+        fixed time constraint.
+    </p>
+
+    <div class="evolution-row">
+        <img src="videos/camera_vs_compound.jpeg" alt="Camera vs Compound"
+            style="width: 100%; height: auto;">
+    </div>
+
+</section>

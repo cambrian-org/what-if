@@ -1,0 +1,110 @@
+<section>
+    <h2>What if eyes could bend light?</h2>
+    <hr style="border-top: 1px solid #333; width: 100%; margin: 20px 0;">
+    <p>
+        Early visual systems faced a fundamental trade-off between light
+        collection and acuity, progressing
+        from simple light-sensitive patches to cup-shaped eyes with smaller
+        apertures. While
+        decreasing the size of the aperture and creating pinhole-like designs is
+        a straightforward way to
+        improve image formation, they severely limit light collection. This
+        trade-off creates a performance
+        ceiling, where further improvements in spatial resolution through
+        pinhole designs are limited
+        by the lack of light. This inherent limitation ultimately restricts the
+        visual capabilities of such
+        systems, causing a saturation in performance. We see this manifested in
+        our results where agents
+        with pinhole eyes plateau in fitness and are not able to achieve the
+        performance benefits of improved spatial resolution.
+        What if we introduced optical elements that can redirect light into
+        our agents? Lenses emerged as a innovation in biological evolution and
+        we investigate the impact
+        of enabling optical elements capable of bending light in our framework.
+
+    </p>
+
+    <div class="evolution-row">
+        <div class="video-container">
+            <div style="display: flex; justify-content: space-between;">
+                <video autoplay loop muted style="width: 65%; height: auto;">
+                    <source src="videos/Evolution-of-optical-parameters.mp4"
+                        type="video/mp4">
+                </video>
+                <img src="videos/eye-tree.jpeg"
+                    alt="What if eyes could bend light?"
+                    style="width: 33%; height: auto;">
+            </div>
+            <div class="caption detection"> Agents Evolve to focusing lenses to
+                resolve a fundamental trade-off
+                in vision between light collection and spatial resolution. Green
+                represents the food, and red the poison. The green and red are
+                not visible to the agent, and it must use the textures on the
+                spheres to discriminate between the two.
+            </div>
+
+        </div>
+    </div>
+
+    <p>
+        We examined how adding optical elements could alter the evolutionary
+        path of vision in agents performing a DETECTION task. First, in the
+        <em>EYE
+            WITHOUT OPTICS</em> experiment, only pupil size could mutate,
+        mimicking early eye evolution. Initially, agents had fully open
+        apertures
+        for maximum light intake but poor image sharpness. Over generations,
+        they
+        evolved cup-shaped eyes to reduce blur and eventually near-pinhole eyes,
+        balancing sharpness and brightness. This progression demonstrated the
+        natural trade-off between spatial resolution and light collection.
+
+        At generation 30, we introduced optical elements in the <em>EYE WITH
+            OPTICS</em> experiment, allowing agents to mutate lens shape and
+        refractive index. The initial random lenses reduced performance, but by
+        generation 50, they evolved into slightly convex shapes, showing early
+        lens-like focusing. Eventually, agents developed well-defined lenses
+        with
+        symmetric point spread functions while maintaining larger pupils. This
+        overcame the pinhole trade-off, enabling both sharp vision and higher
+        light throughput, leading to improved task performance.
+    </p>
+
+    <h4 style="text-align: center;">
+        The lens represents a fundamental innovation in the evolutionary
+        solution space
+        to account for the demands of achieving accurate environmental
+        perception.
+    </h4>
+    <div class="evolution-row">
+        <div class="video-container">
+            <img src="videos/ONLY_APERTURE_PUPIL_SIZE_EXPERIMENT.png"
+                alt="Camera vs Compound"
+                style="width: 100%; height: auto;">
+            <div class="caption detection">The <em>EYE WITHOUT OPTICS</em> (dark
+                blue) leads to different pupil sizes
+                in our agents
+                and lower performances (see paper for details).
+            </div>
+        </div>
+
+        <img src="images/arrow.jpg" alt="Arrow"
+            style="width: 5%; height: auto;">
+
+        <div class="video-container">
+            <img src="videos/ALL_PUPIL_SIZE_EXPERIMENT.png"
+                alt="Camera vs Compound"
+                style="width: 100%; height: auto;">
+            <div class="caption detection"> We intervene at
+                Generation 30 to allow agents to innovate optical components.
+                Our <em>EYE WITH OPTICS</em> (light blue) agents evolve back to
+                larger pupil sizes and have higher performances (this time by
+                innovating
+                lenses).
+            </div>
+        </div>
+
+    </div>
+
+</section>

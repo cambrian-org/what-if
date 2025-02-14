@@ -1,0 +1,282 @@
+body {
+    margin: 0;
+    font-family: 'Linux Biolinum', sans-serif, Times;
+    background: #fff;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background: #000;
+    overflow: hidden;
+}
+
+.hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    margin-left: 10%;
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin: 0;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.conference-info {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.location-info {
+    font-size: 2.0rem;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.academic-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0rem;
+    font-weight: normal;
+}
+
+.subtitle {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: normal;
+}
+
+.subtitle-small {
+    font-size: 1.30rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+.subtitle-x-small {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+.metadata {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+.metadata-item {
+    margin-bottom: 0.5rem;
+}
+
+.metadata-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.metadata-links a {
+    color: #333;
+    text-decoration: none;
+}
+
+.metadata-links a:hover {
+    text-decoration: underline;
+}
+
+.metadata-links a[href$="PDF"] {
+    color: #ff4e33;
+}
+
+.authors {
+    font-size: 1rem;
+    color: #666;
+}
+
+.institution {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+.abstract p {
+    margin-bottom: 1.5rem;
+    max-width: 75%;
+}
+
+.citation-block {
+    background: #fafafa;
+    width: 100%;
+    padding: 0 2rem;
+    margin: 2rem 0;
+    font-family: 'Consolas', monospace;
+    font-size: 0.9rem;
+    white-space: pre;
+    overflow-x: auto;
+    line-height: 1.4;
+    position: relative;
+}
+
+.citation-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.copy-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+    padding: 0.5rem;
+    transition: color 0.2s ease;
+}
+
+.copy-button:hover {
+    color: #333;
+}
+
+.copy-button svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Success message styling */
+.copy-message {
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+    background: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.copy-message.show {
+    opacity: 1;
+}
+
+.evolution-row {
+    display: flex;
+    gap: 2rem;
+    margin: 3rem 0;
+    align-items: center;
+}
+
+.video-container {
+    flex: 1;
+    position: relative;
+}
+
+video {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.caption {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-weight: normal;
+    font-size: 1.2rem; /* Increased font size for caption */
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #c21818;
+}
+
+footer {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    text-align: center;
+    color: #666;
+    border-top: 1px solid #e1e4e8;
+}
+
+footer a {
+    color: #666;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: #333;
+}
+
+/* Bouncing Arrow Styles */
+.scroll-arrow {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2rem;
+    z-index: 2;
+    animation: bounce 2s infinite;
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    40% {
+        transform: translateX(-50%) translateY(-30px);
+    }
+    60% {
+        transform: translateX(-50%) translateY(-15px);
+    }
+}
+
+@media (max-width: 768px) {
+    .content,
+    .toggle-section {
+        max-width: 100%;
+        padding: 1rem;
+    } 
+}

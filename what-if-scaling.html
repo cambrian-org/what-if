@@ -1,0 +1,75 @@
+<section>
+    <h2>What if the brain became larger?</h2>
+    <hr style="border-top: 1px solid #333; width: 100%; margin: 20px 0;">
+    <p>
+        Biological visual intelligence emerges from the interplay and scaling
+        between sensory hardware, morphology, and neural processing. While
+        artificial
+        intelligence relies on fixed sensors
+        (RGB cameras) and scales with the number of parameters, nature has
+        evolved diverse eye-brain systems that scale in complexity together to
+        solve intelligent tasks. By varying eye acuity (cyclesper-degree),
+        neural network size, and temporal processing, we investigate how
+        these
+        resources shape the evolution of visual intelligence and task-specific
+        performance in embodied
+        agents.
+
+        Our analysis reveals distinct power law scaling between task performance
+        and neural capacity
+        across navigation, detection, and tracking tasks. This power law defines
+        a predictable
+        improvement in task error as a function of increasing network size. But
+        this trend is only persists
+        when another quantity, the level of visual acuity, is also able to
+        improve. Each acuity level
+        bounds the maximum achievable task performance (minimum task error). Low
+        acuity models hit
+        performance ceilings, demonstrating that poor visual acuity creates a
+        fundamental bottleneck
+        that cannot be overcome by simply scaling neural capacity. This resource
+        limitation mirrors
+        the power laws for scaling (also known as ‘scaling laws’) seen in
+        artificial intelligence systems,
+        where performance is bounded by the interplay of model size,
+        computational resources, and data
+        availability.
+    </p>
+
+    <div class="evolution-row">
+        <img src="videos/acuity_vs_num_params.jpg" alt="Camera vs Compound"
+            style="width: 100%; height: auto;">
+    </div>
+    <div class="caption detection">
+        Our experiments reveal visual task-dependent power law scaling between
+        number of parameters and sensory acuity (CPD). This demonstrates that
+        scaling in sensory input is required for embodied tasks to avoid a
+        bottleneck that cannot be overcome by neural scaling alone.
+    </div>
+
+    <p>
+        These scaling relationships reveal how evolving morphological
+        constraints like eye structure
+        and number of neurons (brain size) act as fundamental resources that can
+        affect scaling in
+        embodied agents performance. Sensory acuity (measured with CPD) is also
+        a resource which
+        limits the throughput of information from the scene to agent based on
+        fundamental limitations
+        of light transport. Our results demonstrate that power law scaling only
+        holds when both acuity
+        and parameter resources scale appropriately, with performance saturating
+        when either becomes
+        a bottleneck (i.e. in the relationship between visual acuity and number
+        of parameters increasing
+        model size cannot overcome fundamental sensing limitations). However,
+        biological evolution has
+        repeatedly overcome such constraints through scaling across different
+        genetic traits-
+        suggesting parallel opportunities for artificial systems where scaling
+        of data and parameters alone
+        may be insufficient without corresponding scaling in sensory
+        capabilities.
+    </p>
+
+</section>
